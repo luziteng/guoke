@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body,
+html {
+    font-size: 14px;
+    color: #3f3f3f;
+    font-family: "微软雅黑";
+    word-wrap: break-word;
+}
+
+html {
+    height: 100%;
+    background: #eee;
+}
+
+body {
+    min-height: 100%;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #8fc31f;
+}
+
+ul li {
+    list-style: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+textarea {
+         margin-top: 0px; 
+    -webkit-appearance: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #d8d8d8;
+}
+
+@media screen and (min-width:500px) {
+
+    .nav,
+    .search-box,
+    body {
+        max-width: 500px;
+        margin: 0 auto
+    }
+}
+
+.main {
+    padding: 16px 20px;
+}
+
+.block {
+    border-bottom: 1px solid #eee;
+    text-align: center
+}
+
+.flex {
+    display: flex;
+}
+
+.table {
+    display: table;
+}
+
+.table>div {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.hide,
+div.hide,
+p.hide {
+    display: none;
+}
+
+.hidden {
+    display: none !important
+}
+
+.red {
+    color: #ff4500;
+}
+
+.error {
+    color: #ff4500 !important;
+    font-weight: bolder;
+}
+
+.blue {
+    color: #2ab3f6;
+    text-decoration: underline;
+}
+
+.icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    vertical-align: middle
+}
+
+.submit-allow {
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    line-height: 100%
+}
+
+.tag {
+    height: 27px;
+    line-height: 27px;
+    color: #999;
+    background: #f6f6f6;
+    display: inline-block;
+    margin: 0 10px 20px 0;
+    padding: 0 10px;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-radius: 3px
+}
+
+.tag.active {
+    background: #fff;
+    border: 1px solid #8fc31f;
+}
+
+.avatar {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.mask {
+ 
+    z-index: 9;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .5
+}
+
+.finish,
+.tip {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    color: #999;
+}
+
+.finish {
+    margin: 30px auto 50px;
+}
+
+.fixed {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.toast {
+    color: #fff;
+    height: 100px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    line-height: 100px;
+    font-size: 14px
+}
